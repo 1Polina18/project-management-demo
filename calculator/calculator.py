@@ -17,6 +17,7 @@ def divide(a, b):
 def power(a, b):
     return a ** b
 
+print("Это изменение в main ветке")
 if __name__ == "__main__":
     print("Simple Calculator")
     x = float(input("Enter first number: "))
