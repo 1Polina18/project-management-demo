@@ -13,11 +13,15 @@ def divide(a, b):
         raise ValueError("Cannot divide by zero!")
     return a / b
 
+# Добавьте в calculator/calculator.py
+def power(a, b):
+    return a ** b
+
 if __name__ == "__main__":
     print("Simple Calculator")
     x = float(input("Enter first number: "))
     y = float(input("Enter second number: "))
-    op = input("Enter operation (+, -, *, /): ")
+    op = input("Enter operation (+, -, *, /, ^): ")
 
     if op == '+':
         result = add(x, y)
@@ -27,6 +31,9 @@ if __name__ == "__main__":
         result = multiply(x, y)
     elif op == '/':
         result = divide(x, y)
+    # Обновите раздел с выбором операции:
+    elif op == '^':
+        result = power(x, y)
     else:
         print("Invalid operation!")
         exit(1)
